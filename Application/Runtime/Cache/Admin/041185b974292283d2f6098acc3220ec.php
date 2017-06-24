@@ -1,0 +1,54 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>采供商城后台登录</title>
+	<link rel="stylesheet" href="/shop/Public/Admin/css/base.css"/>
+	<!-- 动画样式 -->
+	<link rel="stylesheet" href="/shop/Public/Admin/css/animate.css"/>
+	<!-- 基础样式 -->
+	<link rel="stylesheet" href="/shop/Public/Admin/css/index.css?v=1"/>
+	<!-- 图标icon -->
+	<link rel="icon" href="/shop/Public/Admin/images/icon.ico" type="image/x-icon"/>
+</head>
+<body>
+	<!-- 网络监测 -->
+	<div class="bad-network hide tc radius5px" id="j-errorNetwork">已与服务器断开，请检查网络连接</div>
+	<div class="wrapper radius10px" id="j-wrapper">
+		<form action="/shop/index.php/Admin/Index/login_confirm" method="post">
+			<!-- 账号 -->
+			<div class="row tc">
+				<span class="icon icon-account"></span>
+				<input type="text" class="radius5px box-sizing" name="username" id="j-account" autofocus="autofocus" autocomplete="on" placeholder="请输入帐号"/>
+			</div>
+			<!-- 密码 -->
+			<div class="row tc">
+				<span class="icon icon-pwd"></span>
+				<input type="password" class="radius5px box-sizing"  name="password" id="j-secret" placeholder="请输入密码"/>
+			</div>
+			<!-- 登录 -->
+			<div class="row tc">
+				<button type="submit" class="btn btn-login" id="j-loginBtn">登录</button>
+			</div>
+		</form>
+		<!-- 注册 -->
+		<div class="u-redirect"><a href="./register.html">注册</a></div>
+	</div>
+	<!-- footer -->
+	<div id="footer" class="footer tc">		
+		<p class="hide">为了更好地体验采供商城管理平台，建议您使用IE10、Chrome、FireFox、Safari、360等主流浏览器。</p>
+		<p>&copy;采供商城管理平台</p>
+	</div>
+	<script src="/shop/Public/Admin/3rd/jquery-1.11.3.min.js"></script>
+	<script src="/shop/Public/Admin/js/config.js"></script>
+	<script src="/shop/Public/Admin/js/md5.js"></script>
+	<script src="/shop/Public/Admin/js/util.js"></script>
+	<!-- <script src="/shop/Public/Admin/js/login.js"></script> -->
+	<!-- <script src="/shop/Public/Admin/js/config.js"></script> -->
+	<!-- <script src="/shop/Public/Admin/js/util.js?v=2"></script> -->
+	<!-- <script src="/shop/Public/Admin/js/cache.js?v=2"></script> -->
+	<!-- <script src="/shop/Public/Admin/js/link.js"></script> -->
+	<!-- <script src="/shop/Public/Admin/js/module/base.js"></script> -->
+	<!-- <script src="/shop/Public/Admin/js/main.js?v=2"></script> -->
+</body>
+</html>
